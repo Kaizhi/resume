@@ -1,0 +1,69 @@
+      * { margin: 0; padding: 0; }
+        body { font: 14px Helvetica, Sans-Serif; line-height: 21px;  color:black; overflow-y:scroll;}
+        .clear { clear: both; }
+        #page-wrap {    
+			background: url("../img/glow.png") no-repeat scroll center top transparent;
+			margin: 0 auto 0;
+			padding: 10px 0 0;
+			width: 800px;
+			min-height: 225px;
+			
+		}
+        #pic { float: right; margin: -30px 0 0 0; }
+        h1 { margin: 0 0 10px 0; padding: 0 0 10px 0; font-size: 42px; font-weight: bold; border-bottom: 1px solid #4FACC1; }
+        h2 { font-size: 20px; margin: 0 0 6px 0; position: relative; }
+        h2 span, h1 span { bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: grey; font-weight: normal; }
+        p { margin: 0 0 16px 0; }
+        a { color: grey; text-decoration: none; border-bottom: 1px dotted #4FACC1; }
+        a:hover { border-bottom-style: solid; color: #4FACC1; }
+        ul { margin: 0 0 32px 17px; }
+        #objective { float: left; }
+        #objective p { font-family: Georgia, Serif; font-style: italic; color: #666; }
+        dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px; border-right: 1px solid #4FACC1;  }
+        dd { width: 600px; float: right; }
+        dd.clear { float: none; margin: 0;}
+		.contact-left { width:500px; float:left; font-size:1.1em; font-style:italic;}
+		.contact-right {width:250px; float:right; text-align:right;}
+		#contact-info {height:170px;}
+		
+		.hideable {display:none;}
+		#profile {display:block;}
+		
+		#nav-main {
+			background: url("../img/title2.png") no-repeat scroll 0 9px transparent;
+			height: 250px;
+			left: 50%;
+
+			
+			margin-left: -620px;
+			position: fixed;
+			top: 272px;
+			width: 210px;
+		}
+		#nav-main ul {
+			border-left: 3px solid #4FACC1;
+			height: 222px;
+			list-style: none outside none;
+			margin: 0 0 0 40px;
+		
+		}
+		#nav-main li a {
+			color:white;
+			margin-left:10px;
+			font-size:22px;
+			border-bottom:none;
+	
+ 
+		}
+		#nav-main li a:hover {
+			border-bottom:1px solid #4FACC1;
+		}
+		#nav-main li a.current {
+			border-bottom:1px solid #4FACC1;
+		}
+		#nav-main li {
+			margin: 10px 0;
+		
+		}
+		#maincontainer { width:1000px; margin: 0 auto 0;}
+		em {font-style:italic;}
