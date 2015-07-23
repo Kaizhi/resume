@@ -26,7 +26,7 @@
         dd.clear { float: none; margin: 0;}
 		.contact-left { width:500px; float:left; font-size:1.1em; font-style:italic;}
 		.contact-right {width:250px; float:right; text-align:right;}
-		#contact-info {height:150px;}
+		#contact-info {height:140px;}
 
 		.hideable {display:none;}
 		#profile {display:block;}
