@@ -1,105 +1,386 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-     <title>Kaizhi Wei</title>
-     <link rel="stylesheet" href="css/style.css">
-     <link rel="shortcut icon" href="favicon.ico" type='image/x-icon'>
-</head>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Kaizhi Wei</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font: 14px Helvetica, Sans-Serif;
+        line-height: 21px;
+        color: black;
+        overflow-y: scroll;
+      }
+      .clear {
+        clear: both;
+      }
+      #page-wrap {
+        background: url("../img/glow.png") no-repeat scroll center top
+          transparent;
+        margin: 0 auto 0;
+        padding: 10px 0 0;
+        width: 800px;
+        min-height: 225px;
+      }
+      #pic {
+        float: right;
+        margin: -30px 0 0 0;
+      }
+      h1 {
+        margin: 0 0 10px 0;
+        padding: 0 0 10px 0;
+        font-size: 42px;
+        font-weight: lighter;
+        border-bottom: 1px solid #4facc1;
+      }
+      h2 {
+        font-size: 16px;
+        font-weight: 400;
+        margin: 0 0 6px 0;
+        position: relative;
+      }
+      h2 span,
+      h1 span {
+        bottom: 0;
+        right: 0;
+        font-style: italic;
+        font-family: Helvetica;
+        font-size: 13px;
+        color: grey;
+        font-weight: normal;
+      }
+      p {
+        margin: 0 0 16px 0;
+      }
+      a {
+        color: grey;
+        text-decoration: none;
+        border-bottom: 1px dotted #4facc1;
+      }
+      a:hover {
+        border-bottom-style: solid;
+        color: #4facc1;
+      }
+      ul {
+        margin: 0 0 20px 17px;
+      }
+      #objective {
+        float: left;
+      }
+      #objective p {
+        font-family: Helvetica;
+        font-style: italic;
+        color: #666;
+      }
+      dt {
+        font-style: italic;
+        font-weight: lighter;
+        font-size: 18px;
+        text-align: right;
+        padding: 0 26px 0 0;
+        width: 100px;
+        float: left;
+        height: 100px;
+        border-right: 1px solid #4facc1;
+      }
+      dt.short {
+        height: 60px;
+      }
+      dt.education {
+        height: 50px;
+      }
+      dd {
+        width: 650px;
+        float: right;
+      }
+      dd.clear {
+        float: none;
+        margin: 0;
+      }
+      .contact-left {
+        width: 500px;
+        float: left;
+        font-size: 1.1em;
+        font-style: italic;
+      }
+      .contact-right {
+        width: 250px;
+        float: right;
+        text-align: right;
+      }
+      #contact-info {
+        height: 140px;
+      }
 
-<body>
+      .hideable {
+        display: none;
+      }
+      #profile {
+        display: block;
+      }
+
+      #nav-main {
+        background: url("../img/title2.png") no-repeat scroll 0 9px transparent;
+        height: 250px;
+        left: 50%;
+
+        margin-left: -620px;
+        position: fixed;
+        top: 272px;
+        width: 210px;
+      }
+      #nav-main ul {
+        border-left: 3px solid #4facc1;
+        height: 222px;
+        list-style: none outside none;
+        margin: 0 0 0 40px;
+      }
+      #nav-main li a {
+        color: white;
+        margin-left: 10px;
+        font-size: 22px;
+        border-bottom: none;
+      }
+      #nav-main li a:hover {
+        border-bottom: 1px solid #4facc1;
+      }
+      #nav-main li a.current {
+        border-bottom: 1px solid #4facc1;
+      }
+      #nav-main li {
+        margin: 10px 0;
+      }
+      #maincontainer {
+        width: 1000px;
+        margin: 0 auto 0;
+      }
+      em {
+        font-style: italic;
+      }
+    </style>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
     <div id="page-wrap">
-        <div id="contact-info" class="vcard">
-            <h1 class="fn">Kaizhi Wei
-            </h1>
-            <p class="contact-left">
-                Pragmatic software engineer with a passion for delivering <em>delightful</em> user experiences.
-                Seeking to expand my leadership skills and work on meaningful projects.
-                I enjoy hacking on side projects, <a target="_blank" href="https://instagram.com/kaizhiw">photography</a>, cycling, and skiing.
-            </p>
-            <p class="contact-right">
-                Email: <a class="email" target="_blank" href="mailto:hello@kaizhiwei.com">hello@kaizhiwei.com</a><br>
-                Website: <a class="website" target="_blank" href="http://www.kaizhiwei.com">www.kaizhiwei.com</a><br>
-                Github: <a class="website" target="_blank" href="https://github.com/Kaizhi">github.com/Kaizhi</a><br>
-                Phone: <span class="tel">408.714.8925</span><br>
-            </p>
-        </div>
-        <dl>
-            <dt>Experience</dt>
-            <dd>
-                
-                <h2><a href="https://www.centro.net/" target="_blank">Centro</a><br>
-                  <span>Lead Software Engineer - Toronto, ON, Apr / 2018 - Present</span><br>
-                  <span>Senior Software Engineer - Toronto, ON, Jan / 2016 - Apr / 2018</span>
-                </h2>
+      <div id="contact-info" class="vcard">
+        <h1 class="fn">Kaizhi Wei</h1>
+        <p class="contact-left">
+          Pragmatic software engineer with a passion for delivering
+          <em>delightful</em> user experiences. Seeking to build on my
+          leadership skills and work on meaningful projects. I enjoy hacking on
+          side projects,
+          <a target="_blank" href="https://instagram.com/kaizhiw">photography</a
+          >, cycling, and skiing.
+        </p>
+        <p class="contact-right">
+          Email:
+          <a class="email" target="_blank" href="mailto:hello@kaizhiwei.com"
+            >hello@kaizhiwei.com</a
+          ><br />
+          Website:
+          <a class="website" target="_blank" href="http://www.kaizhiwei.com"
+            >www.kaizhiwei.com</a
+          ><br />
+          Github:
+          <a class="website" target="_blank" href="https://github.com/Kaizhi"
+            >github.com/Kaizhi</a
+          ><br />
+          Phone: <span class="tel">408.714.8925</span><br />
+        </p>
+      </div>
+      <dl>
+        <dt>Experience</dt>
+        <dd>
+          <h2>
+            <a href="https://www.centro.net/" target="_blank">Centro</a><br />
+            <span
+              >Lead Software Engineer - Toronto, ON, Apr / 2018 - Present</span
+            ><br />
+            <span
+              >Senior Software Engineer - Toronto, ON, Jan / 2016 - Apr /
+              2018</span
+            >
+          </h2>
 
-                <ul>
-                  <li>Led a cross-functional team of 3 engineers, 1 PM, and 1 QA to deliver complex features on a timely basis with a high degree of quality.</li>
-                  <li>Provided technical mentorship and coaching for engineers, providing feedback in monthly 1-1s and quarterly reviews.</li>
-                  <li>Contributed to hiring committee as an interviewer focusing on frontend topics.</li>
-                  <li>Responsible for architectural guidance and decisions in the form of RFCs for the future of the product.</li>
-                  <li>Implemented or oversaw the majority of features in the Basis Platform DSP - a product drives 90% of Centro's software revenue growing at 25% YoY.</li>
-                </ul>
+          <ul>
+            <li>
+              Led a cross-functional team of 3 engineers, 1 PM, and 1 QA to
+              deliver complex features on a timely basis with a high degree of
+              quality.
+            </li>
+            <li>
+              Provided technical mentorship and coaching for engineers,
+              providing feedback in monthly 1-1s and quarterly reviews.
+            </li>
+            <li>
+              Member of hiring committee focusing on frontend topics,
+              successfully hired 5 engineers.
+            </li>
+            <li>
+              Responsible for architectural guidance and decisions in the form
+              of RFCs for the future of the product.
+            </li>
+            <li>
+              Implemented or oversaw the majority of features in the Basis
+              Platform DSP - a product that drives most of Centro's software
+              revenue growing at 25% YoY.
+            </li>
+          </ul>
 
-                <h2>Yahoo! (Flickr)<br><span>Front-End Engineer - San Francisco, CA, April / 2014 - Dec / 2015</span></h2>
-                <ul>
-                    <li>Built many of the shared components and the most highly trafficked pages (Photostream, Faves, Albums) of the <a href="http://www.theverge.com / 2015/5/7/8562387/flickr-camera-roll-uploadr-mobile-redesign" target="_blank">Flickr 4.0</a> redesign as a single page isomorphic app.</li>
-                    <li>Responsible for building out the frontend of Flickr's checkout/wallet/payouts experience.</li>
-                    <li>Improved performance of Flickr web embeds (Embedr) by over 100% by rebuilding as an Express app with over 94% test coverage. Embedr drove a 20% increase in DAUs after launch.</li>
-                </ul>
+          <h2>
+            Flickr (Yahoo!)<br /><span
+              >Front-End Engineer - San Francisco, CA, April / 2014 - Dec /
+              2015</span
+            >
+          </h2>
+          <ul>
+            <li>
+              Built many of the shared components and the most highly trafficked
+              pages (Photostream, Faves, Albums) of the
+              <a
+                href="http://www.theverge.com / 2015/5/7/8562387/flickr-camera-roll-uploadr-mobile-redesign"
+                target="_blank"
+                >Flickr 4.0</a
+              >
+              redesign as a single page isomorphic app.
+            </li>
+            <li>
+              Responsible for building out the frontend of Flickr's
+              checkout/wallet/payouts experience.
+            </li>
+            <li>
+              Improved performance of Flickr web embeds (Embedr) by over 100% by
+              rebuilding as an Express app with over 94% test coverage. Embedr
+              drove a 20% increase in DAUs after launch.
+            </li>
+            <li>
+              Created a TV dashboard with React to surface production metrics
+              and alerts. Highly effective in increasing team's responsiveness
+              to performance incidents and outages.
+            </li>
+          </ul>
 
-                <h2>UXP Systems<br><span>Front-End Developer - Toronto, ON, November / 2012 - March / 2014</span></h2>
-                <ul>
-                    <li>Primary developer for UXP's single-page JavaScript applications on multiple platforms using Backbone.js, SASS, and RequireJS.</li>
-                    <li>Quickly learned and executed a proof of concept SVG DOM-based single page Backbone.js application for use on set-top boxes with limited hardware - resulting in a contract with Rogers Communications worth $10MM.</li>
-                    <li>Developed a proof of concept for Ericsson's Mediaroom platform, succesfully securing a contract with Ericsson for $10MM (using Presentation Framework, ASP.NET, nginx, Redis, xslt, Backbone.js).</li>
-                    <li>Produced and taught a workshop for partners about UXP's JavaScript SDK.</li>
-                </ul>
+          <h2>
+            UXP Systems<br /><span
+              >Front-End Developer - Toronto, ON, November / 2012 - March /
+              2014</span
+            >
+          </h2>
+          <ul>
+            <li>
+              Primary developer for UXP's single-page JavaScript applications on
+              multiple platforms using Backbone.js, SASS, and RequireJS.
+            </li>
+            <li>
+              Quickly learned and executed a proof of concept SVG DOM-based
+              single page Backbone.js app for use on set-top boxes with limited
+              hardware - securing a contract with Rogers worth $10MM.
+            </li>
+            <li>
+              Developed a proof of concept for Ericsson's Mediaroom platform,
+              succesfully securing a contract with Ericsson for $10MM (using
+              Presentation Framework, ASP.NET, Nginx, Redis, xslt, Backbone.js).
+            </li>
+            <li>
+              Produced and taught a workshop for partners about UXP's JavaScript
+              SDK.
+            </li>
+          </ul>
 
-                <h2>Avaya<br><span>Software Engineer - Belleville, ON, December / 2011-September / 2012</span></h2>
-                <ul>
-                    <li>Part of the SIP96X1 Deskphone team working on UI, signalling/networking, and memory management in an embedded <em>Qt/C++</em> environment.</li>
-                    <li>Researched and implemented changes to phone features, reducing server load by more than 50% in large call center environments.</li>
-                    <li>Created an internal tool using <a href="http://twitter.github.com/bootstrap/">Bootstrap</a> and the <a href="http://www.flotcharts.org/">Flot</a> library to
-                    monitor thousands of clients worldwide, allowing the team to efficiently measure and debug core dump issues prior to product release.</li>
-                </ul>
-<!-- 
+          <h2>
+            Avaya<br /><span
+              >Software Engineer - Belleville, ON, December / 2011-September /
+              2012</span
+            >
+          </h2>
+          <ul>
+            <li>
+              Part of the SIP96X1 Deskphone team working on UI,
+              signalling/networking, and memory management in an embedded
+              <em>Qt/C++</em> environment.
+            </li>
+            <!-- <li>
+              Researched and implemented changes to phone features, reducing
+              server load by more than 50% in large call center environments.
+            </li> -->
+            <!-- <li>
+              Created an internal tool to monitor thousands of clients
+              worldwide, allowing the team to efficiently measure and debug core
+              dump issues prior to product release.
+            </li> -->
+          </ul>
+          <!-- 
                 <h2>Uptown Creative Group<br><span>(Remote) Freelance Web Developer - Waterloo, ON, April / 2011-December / 2011</span></h2>
                 <ul>
                     <li>Created pixel perfect <em>HTML/CSS/JS</em> sites, CMS backends using <em>Wordpress</em> and e-commerce sites with <em>Magento</em>.</li>
                 </ul> -->
-            </dd>
+        </dd>
 
-            <dd class="clear"></dd>
+        <dd class="clear"></dd>
 
-            <dt class="short">Projects</dt>
-            <dd>
-                <ul>
-                    <li><a href="http://presets.io" target="_blank">Presets.io</a> - OSX and Windows app for managing Adobe Lightroom photography presets. Built with Electron, Node.js, and React.</li>
-                    <li><a href="https://github.com/Kaizhi/hiresync" target="_blank">Hiresync.io</a> - Real-time collaborative coding platform for technical interviews. Backbone.js, Express, Socket.io, Firebase, and MongoDB.</li>
-                </ul>
-            </dd>
-            <dd class="clear"></dd>
+        <dt class="short">Projects</dt>
+        <dd>
+          <ul>
+            <li>
+              <a href="https://cadenceprints.com" target="_blank">Cadence</a> -
+              Create map prints from your Strava activities. Built with React,
+              Redux, Next.js, Tailwind, and AWS Lambda functions. From ideation
+              to first customer within 2 months during lockdown.
+            </li>
 
-            <dt>Skills</dt>
-            <dd>
-                <ul>
-                    <li>Passion for modern JavaScript and frameworks (React, Redux, Next.js, Express) and tooling (Webpack).</li>
-                    <li>Proficient in various languages and frameworks including Ruby on Rails and Java w/ Spring Boot.</li>
-                    <li>Unit testing with Jasmine, Rspec, and functional testing with Protractor.</li>
-                    <li>Extensive experience with Redis, MongoDB, and PostgreSQL.</li>
-                </ul>
+            <li>
+              <a href="http://presets.io" target="_blank">Presets.io</a> - OSX
+              and Windows app for managing Adobe Lightroom photography presets.
+              Built with Electron, Node.js, and React.
+            </li>
+            <li>
+              <a href="https://github.com/Kaizhi/hiresync" target="_blank"
+                >Hiresync.io</a
+              >
+              - Real-time collaborative coding platform for technical
+              interviews. Backbone.js, Express, Socket.io, Firebase, and
+              MongoDB.
+            </li>
+          </ul>
+        </dd>
+        <dd class="clear"></dd>
 
-            </dd>
+        <dt>Skills</dt>
+        <dd>
+          <ul>
+            <li>
+              Passion for modern JavaScript and frameworks (React, Redux,
+              Next.js, Express) and tooling (Webpack).
+            </li>
+            <li>
+              Proficient in various languages and frameworks including Ruby on
+              Rails and Java w/ Spring Boot.
+            </li>
+            <li>
+              Unit testing with Jasmine, Rspec, and functional testing with
+              Protractor.
+            </li>
+            <li>
+              Extensive experience with MySQL, PostgreSQL, Redis, and MongoDB.
+            </li>
+          </ul>
+        </dd>
 
-            <dd class="clear"></dd>
+        <dd class="clear"></dd>
 
-            <dt class="education">Education</dt>
-            <dd>
-                <h2>University of Guelph<br> <span>BSc, Computer Science</span></h2>
-            </dd>
-            <dd class="clear"></dd>
-        </dl>
+        <dt class="education">Education</dt>
+        <dd>
+          <h2>
+            University of Guelph<br />
+            <span>BSc, Computer Science</span>
+          </h2>
+        </dd>
+        <dd class="clear"></dd>
+      </dl>
     </div>
-</body>
+  </body>
 </html>
